@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abigee Mega</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1 class="header">Abigee Mega</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#product">Product and Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        
+    <main class="main">
+        <section id="home"class="section">
+            <h2 class="welcome">WELCOME TO </h2>
+            <p>Your trusted service for fresh healthy poultry. We offer live chickens and we also kill and dress for you on request.</p>
+            <div class="cta-button"><a href="#contact">Contact us for orders</a></div>
+        </section>
+
+        
+        
+        <section id="about" class="section">
+            <h2 class="about-us">ABOUT US</h2>
+            <p>We are a private owned poultry farm dedicated to providing high quality poultry products. We believe in sustainable farming and offer our chicken live,dressed per your request. </p>
+        </section>
+
+        <section id="product"class="section" style="margin-bottom: 0">
+            <h2 class="our-product">OUR PRODUCTS AND PRICING</h2>
+            
+
+            <ul>
+                <li><h3>Live chickens</h3></li>
+            </ul>
+
+            
+            <div class="cta-button" style="margin-bottom:2rem"><a href="#contact">Order now</a></div>
+
+            <ul>
+                <li><h3>Dressed chicken</h3></li>
+            </ul>
+            <div class="cta-button" style="margin-bottom:2rem"><a href="#contact">Order now</a></div>
+        </section>
+
+        
+        
+        <section id="contact" class="section">
+            <h2 class="you-can-contact-us">CONTACT US</h2>
+            <p>Have any questions or want to place an order, reach out to us.</p>
+            
+            
+            <form action="https://formspree.io/f/mwkrzggw" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" required><br>
+
+                <label for="poultry-type">Poultry-Type</label>
+
+                <select name="poultry-type" id="poultry-type">
+                    <option value="live">Live Chickens</option>
+                    <option value="dressed">Dressed Chickens</option>
+                </select> <br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity"><br>
+
+                <label for="pickup">Would you like to pick up your poultry from the house</label>
+
+                <select name="pickup" id="pickup">
+                    <option value="yes">Yes, I will pick it up from the house</option>
+                    <option value="no"> No, please deliver it to me</option>
+                </select> <br>
+
+                <label for="delivery">Delivery address</label><br>
+                <textarea name="delivery" id="delivery" rows="8"></textarea> <br>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+    <p> <a href="/">Back To Top</a> </p>
+
+    
+    <footer class="footer">
+        &copy; 2024. All Rights Reserved.
+    </footer>
+</body>
+</html>
