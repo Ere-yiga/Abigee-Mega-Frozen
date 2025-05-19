@@ -4,130 +4,92 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 10vh;
+html{
+    scroll-behavior: smooth;
 }
 
-.header{
-    background-color: #007acc;
-    color: white;
-    text-align: center;
-    padding: 1rem auto 0;
-}
-.main{
-    line-height: 1rem;
+html,body{
+    height: 400vh;
 }
 
-nav{
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #333;
-    padding: 1rem 0;
-    text-align: right;
+:root{
+    --header: #4CAF50;
+    --header-p: #A8D5BA;
+    --font-fam: "Arial, Helvetica, sans-serif;"
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    background-color: var(--header);
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-family: var(--font-fam);
 }
 
 ul{
+    display: flex;
     list-style-type: none;
 }
 
-li a{
-    color: white;
-    text-decoration: none;
-}
-
 li{
-    display: inline-block;
-    margin-inline: 0.5rem;
+    padding-left: 1rem;
 }
 
-li a:visited{
-    color: 007acc;
+li a{
+    text-decoration: none;
+    color: #fff;
 }
 
-li a:hover{
-    text-decoration: underline;
-    color: #ccc
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    background-image: url("ab.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.welcome{
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 0.9rem;
+.hero-section>#msg>p{
+    font-size: 2rem;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-fam);
+    font-weight: bold;
 }
+ 
+#msg{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+} 
 
 .cta-button{
-    text-decoration: none;
-    margin-top: 0.5rem;
-    background:  #333;
-    display: inline-block;
-    padding: 3 7 3 7;
-    border-radius: 2rem;
-
+    background-color: var(--header);
+    width: 30%;
+    text-align: center;
 }
-.cta-button a{ 
+
+a{
+    text-decoration: none;
     color: white;
-    text-decoration: none;
-}
-
-
-.cta-button:hover{
-    opacity: 0.5;
-   transition: opacity 0.s;
-}
-.about-us{
-    
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 0.9rem;
-}
-.our-product{
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 0.9;
-}
-.you-can-contact-us{
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 0.9rem;
-}
-
-footer{
+    padding: .8rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
     margin-top: 1rem;
-    width: 100%;
-    height: 35%;
-    text-align: center;
-    color: white;
-    background-color: #333;
-    padding-top: .5rem;
-}
-.blue{
-    background-color: #007acc;
-    width: 100%;
-    height: 35%;
-}
-h2{
-    color: black;
-    font-weight: bolder;
-}
-#home{
-    background-color: #f9f9f9;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 50px 10;
-} 
-#home h2{
-    font-size: 2rem;
-    text-align: center auto;
-} 
-#product, #about, #contact{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 50px 10;
-    margin-left: 10;
 }
