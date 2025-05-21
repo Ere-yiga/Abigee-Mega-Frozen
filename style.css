@@ -9,13 +9,13 @@ html{
 }
 
 html,body{
-    height: 400vh;
+    height: 290vh;
 }
 
 :root{
     --header: #4CAF50;
     --header-p: #A8D5BA;
-    --font-fam: "Arial, Helvetica, sans-serif;"
+    --font-fam: "Arial, Helvetica, sans-serif";
 }
 
 header{
@@ -109,5 +109,41 @@ p{
 }
 
 h2 {
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80%;
+    box-shadow: 2px 2px 5px;
+    justify-content: center;
+}
+
+div{
+    padding-top: 1.2rem;
+}
+
+button{
+    margin-top: 1rem;
+    background-color: var(--header);
+    background-color: var(--header);
+    width: 30%;
+    text-align: center;
+    color: #fff;
+    padding: .8rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+footer{
+    margin-top: 24rem; 
+    background-color: #4CAF50;
+    padding: 2rem;
+    color: #fff;
+    font-size: 1.4rem;
     text-align: center;
 }
