@@ -119,6 +119,7 @@ form{
     min-width: 80%;
     box-shadow: 2px 2px 5px;
     justify-content: center;
+    margin: 2rem auto;
 }
 
 div{
@@ -129,14 +130,15 @@ button{
     margin-top: 1rem;
     background-color: var(--header);
     background-color: var(--header);
-    width: 30%;
+    width: 100%;
     text-align: center;
     color: #fff;
-    padding: .8rem;
+    padding: .6rem 2rem;
     border-radius: 5px;
     font-size: 1.4rem;
     margin-top: 1rem;
     border: none;
+    margin-bottom: 2rem;
 }
 
 footer{
