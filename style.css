@@ -59,7 +59,9 @@ li a{
     cursor: pointer;
     color: white;
 }
-
+.show{
+    display:none;
+}
 .hero-section{
     display: flex;
     flex-direction: column;
@@ -229,8 +231,4 @@ footer{
     .hamburger {
         display: block;
     }
-}
-
-@media (max-width: 1200px){
-    
 }
