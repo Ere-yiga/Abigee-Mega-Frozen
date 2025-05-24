@@ -36,7 +36,10 @@ header{
 
 ul{
     display: flex;
-    list-style-type: none;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 li{
@@ -46,6 +49,15 @@ li{
 li a{
     text-decoration: none;
     color: #fff;
+}
+
+.hamburger{
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
 }
 
 .hero-section{
@@ -193,7 +205,6 @@ textarea {
   background-color: #45a049;
 }
 
-
 footer{
     margin-top: 24rem; 
     background-color: #4CAF50;
@@ -203,15 +214,21 @@ footer{
     text-align: center;
 }
 
-.hamburger{
-    display: none;
-}
-
 @media (max-width: 768px){
     nav>ul{
         display: none;
+        flex-direction: column;
+        background-color: #4CAF50;
+        width: 100%;
+        margin-top: 1rem;
     }
-    
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
 
 @media (max-width: 1200px){
