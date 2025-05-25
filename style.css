@@ -140,22 +140,6 @@ div{
     padding-top: 1.2rem;
 }
 
-/* button{
-    margin-top: 1rem;
-    background-color: var(--header);
-    background-color: var(--header);
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    padding: .6rem 2rem;
-    border-radius: 5px;
-    font-size: 1.4rem;
-    margin-top: 1rem;
-    border: none;
-    margin-bottom: 2rem;
-} */
-
-
 form {
   display: flex;
   flex-direction: column;
