@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-html,body{
+body{
     height: 290vh;
 }
 
@@ -53,7 +53,7 @@ li a{
 
 .hamburger{
     display: none;
-    font-size: 2rem;
+    font-size: 1rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -95,8 +95,16 @@ li a{
 
 .cta-button{
     background-color: var(--header);
-    width: 30%;
+    width: auto;
+    min-width: 160px;
+    max-width: 90vw;
     text-align: center;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    margin: 1rem auto 0 auto;
+    box-sizing: border-box;
+    word-break: break-word;
 }
 
 a{
@@ -201,18 +209,59 @@ footer{
 }
 
 @media (max-width: 768px){
-    nav>ul{
-        display: none;
-        flex-direction: column;
+    nav {
+        position: relative;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        height: 100vh;
+        width: 70vw;
+        max-width: 320px;
         background-color: #4CAF50;
-        width: 100%;
-        margin-top: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 4rem;
+        gap: 2rem;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        box-shadow: -2px 0 8px rgba(0,0,0,0.1);
     }
     nav ul.show {
+        right: 0;
         display: flex;
     }
-
     .hamburger {
         display: block;
+        position: relative;
+        z-index: 1100;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        transition: color 0.2s;
     }
+    .hamburger.active {
+        color: #fff;
+    }
+    .cta-button {
+        width: auto;
+        min-width: 120px;
+        max-width: 90vw;
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+        margin: 1rem auto 0 auto;
+        display: inline-block;
+    }
+}
+
+.hamburger.x:before {
+    content: '\00d7'; /* Unicode for multiplication X */
+    font-size: 2.9rem;
+    color: white;
+}
+.hamburger.x {
+    font-size: 0; /* Hide the hamburger lines */
 }
