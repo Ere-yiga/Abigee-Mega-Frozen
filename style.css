@@ -144,10 +144,6 @@ form{
     margin: 2rem auto;
 }
 
-div{
-    padding-top: 1.2rem;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -164,6 +160,7 @@ form div {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 1.2rem
 }
 
 label {
@@ -238,7 +235,7 @@ footer{
         z-index: 1100;
         background: none;
         border: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: white;
         cursor: pointer;
         transition: color 0.2s;
@@ -257,11 +254,40 @@ footer{
     }
 }
 
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 1.5rem 0.5rem;
+        min-height: 70vh;
+    }
+    #msg {
+        padding: 1.2rem 0.5rem;
+        max-width: 98vw;
+        box-sizing: border-box;
+    }
+    .hero-section > #msg > p {
+        font-size: 1.1rem;
+        text-align: center;
+        word-break: normal;
+        line-height: 1.5;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        font-size: 1.3rem;
+    }
+    .cta-button {
+        font-size: 0.95rem;
+        padding: 0.7rem 1rem;
+        min-width: 100px;
+        max-width: 95vw;
+    }
+}
+
 .hamburger.x:before {
-    content: '\00d7'; /* Unicode for multiplication X */
-    font-size: 2.9rem;
+    content: '\00d7';
+    font-size: 2.3rem;
     color: white;
 }
 .hamburger.x {
-    font-size: 0; /* Hide the hamburger lines */
+    font-size: 0;
 }
