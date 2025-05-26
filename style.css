@@ -53,11 +53,39 @@ li a{
 
 .hamburger{
     display: none;
-    font-size: 1rem;
     background: none;
     border: none;
     cursor: pointer;
-    color: white;
+    position: relative;
+    width: 36px;
+    height: 32px;
+    z-index: 1100;
+    padding: 0;
+}
+.hamburger .bar {
+    display: block;
+    background: white;
+    border-radius: 2px;
+    margin: 6px 0;
+    transition: all 0.35s cubic-bezier(.4,2,.6,1);
+    height: 3px;
+    width: 28px;
+    position: relative;
+}
+.hamburger .bar1 {
+    height: 2px;
+    width: 18px;
+    margin-left: 8px;
+}
+.hamburger .bar2 {
+    height: 4px;
+    width: 28px;
+    margin-left: 0;
+}
+.hamburger .bar3 {
+    height: 1.3px;
+    width: 12px;
+    margin-left: 16px;
 }
 .show{
     display:none;
@@ -205,9 +233,42 @@ footer{
     text-align: center;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     nav {
         position: relative;
+    }
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        width: 36px;
+        height: 32px;
+        z-index: 1100;
+        padding: 0;
+    }
+    .hamburger .bar {
+        display: block;
+        background: white;
+        border-radius: 2px;
+        margin: 6px 0;
+        transition: all 0.35s cubic-bezier(.4,2,.6,1);
+        height: 3px;
+        width: 28px;
+        position: relative;
+    }
+    .hamburger.x .bar1 {
+        transform: rotate(45deg) translate(5px, 5px);
+        background: white;
+    }
+    .hamburger.x .bar2 {
+        opacity: 0;
+        transform: scaleX(0.5);
+    }
+    .hamburger.x .bar3 {
+        transform: rotate(-45deg) translate(5px, -5px);
+        background: white;
     }
     nav ul {
         position: fixed;
@@ -228,20 +289,6 @@ footer{
     nav ul.show {
         right: 0;
         display: flex;
-    }
-    .hamburger {
-        display: block;
-        position: relative;
-        z-index: 1100;
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        color: white;
-        cursor: pointer;
-        transition: color 0.2s;
-    }
-    .hamburger.active {
-        color: #fff;
     }
     .cta-button {
         width: auto;
@@ -272,6 +319,9 @@ footer{
         padding: 0;
         margin: 0;
     }
+    .hero-section #msg>p{
+        font-size: 1.3rem;
+    }
     body{
         font-size: 1.3rem;
     }
@@ -281,13 +331,4 @@ footer{
         min-width: 100px;
         max-width: 95vw;
     }
-}
-
-.hamburger.x:before {
-    content: '\00d7';
-    font-size: 2.3rem;
-    color: white;
-}
-.hamburger.x {
-    font-size: 0;
 }
