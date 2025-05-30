@@ -234,6 +234,12 @@ footer{
 }
 
 @media (max-width: 768px) {
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
     nav {
         position: relative;
     }
@@ -302,6 +308,12 @@ footer{
 }
 
 @media (max-width: 480px) {
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
     .hero-section {
         padding: 1.5rem 0.5rem;
         min-height: 70vh;
