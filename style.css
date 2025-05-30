@@ -269,9 +269,9 @@ footer{
     .hamburger .bar1,
     .hamburger .bar2,
     .hamburger .bar3 {
-        width: 28px !important;
-        height: 3px !important;
-        margin: 6px 0 !important;
+        width: 28px;
+        height: 3px;
+        margin: 6px 0;
         border-radius: 2px;
         background: white;
         transition: all 0.35s cubic-bezier(.4,2,.6,1);
@@ -280,7 +280,7 @@ footer{
     .hamburger .bar1,
     .hamburger .bar2,
     .hamburger .bar3 {
-        margin-left: 0 !important;
+        margin-left: 0;
     }
     .hamburger.x .bar1 {
         transform: translateY(9px) rotate(45deg);
@@ -306,12 +306,14 @@ footer{
         transition: right 0.3s ease;
         z-index: 1000;
         box-shadow: -2px 0 8px rgba(0,0,0,0.1);
-        font-size: 1rem; /* Reduce font size for nav links */
+        font-size: 1rem; 
     }
     nav ul li a {
         font-size: 1rem;
         padding: 0.6rem 0.8rem;
-        white-space: normal; /* Allow wrapping if needed, but smaller font helps */
+        white-space: normal; 
+        border-bottom: 2px solid white;
+        width: 100%;
     }
     nav ul.show {
         right: 0;
