@@ -10,6 +10,7 @@ html {
 
 body{
     height: 290vh;
+    line-height: 1;
 }
 
 :root{
@@ -313,7 +314,7 @@ footer{
         display: flex;
         justify-content: space-between;
     }
-    
+
     .hero-section {
         padding: 1.5rem 0.5rem;
         min-height: 70vh;
