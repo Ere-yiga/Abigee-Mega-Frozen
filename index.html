@@ -1,24 +1,24 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abigee Mega</title>
     <link rel="shortcut icon" href="ab.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <header>
         <h3 class="logo">Abigee Mega</h3>
-
         <nav>
             <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
                 <span class="bar bar1"></span>
                 <span class="bar bar2"></span>
                 <span class="bar bar3"></span>
             </button>
-
-            <ul id="nav-items"> 
+            <ul id="nav-items">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#product">Product and Pricing</a></li>
@@ -27,9 +27,8 @@
         </nav>
     </header>
 
-        
     <main class="main">
-        <section class="hero-section">
+        <section id="home" class="hero-section">
             <div id="msg">
                 <p>Your trusted service for fresh healthy poultry. We offer live chickens, kill and dress for you on request.</p>
                 <a href="#contact" class="cta-button">Contact Us</a>
@@ -38,24 +37,59 @@
 
         <section id="about">
             <h2 class="about-us">ABOUT US</h2>
-                <p>We are a private owned poultry farm dedicated to providing high quality poultry products. We believe in sustainable farming and offer our chicken live,dressed per your request. </p>
+            <p>We are a private owned poultry farm dedicated to providing high quality poultry products. We believe in sustainable farming and offer our chicken live, dressed per your request.</p>
         </section>
 
         <section id="product">
             <h2 class="our-product">OUR PRODUCTS AND PRICING</h2>
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <span class="product-badge">Available Now</span>
+                    <span class="product-icon">🐔</span>
+                    <p class="product-name">Live Chicken</p>
+                    <p class="product-desc">Healthy, farm-raised chickens delivered alive. Perfect for those who prefer fresh, unprocessed poultry.</p>
+                    <div class="product-price">
+                        <span class="price-currency">₦</span>
+                        <span class="price-amount">10,000</span>
+                        <span class="price-unit">/ bird</span>
+                    </div>
+                    <ul class="product-features">
+                        <li>Farm-raised & healthy</li>
+                        <li>Available for pickup or delivery</li>
+                        <li>Sold per bird</li>
+                    </ul>
+                    <a href="#contact" class="product-cta">Order Now</a>
+                </div>
+
+                <div class="product-card featured">
+                    <span class="product-badge popular">Most Popular</span>
+                    <span class="product-icon">🍗</span>
+                    <p class="product-name">Dressed Chicken</p>
+                    <p class="product-desc">Freshly slaughtered and cleaned on request. Ready to cook — no extra prep needed on your end.</p>
+                    <div class="product-price">
+                        <span class="price-currency">₦</span>
+                        <span class="price-amount">12,000</span>
+                        <span class="price-unit">/ bird</span>
+                    </div>
+                    <ul class="product-features">
+                        <li>Killed & cleaned on request</li>
+                        <li>Available for pickup or delivery</li>
+                        <li>100% fresh, no preservatives</li>
+                    </ul>
+                    <a href="#contact" class="product-cta">Order Now</a>
+                </div>
+
+            </div>
         </section>
 
         <section id="contact">
             <h2 class="you-can-contact-us">CONTACT US</h2>
-            <p>Have any questions or want to place an order, reach out to us.</p>
-            
-            
             <form action="" method="POST">
                 <div>
                     <label for="name">Full Name</label>
                     <input type="text" name="name" id="name" required>
                 </div>
-                
                 <div>
                     <label for="poultry-type">Poultry-Type</label>
                     <select name="poultry-type" id="poultry-type">
@@ -63,35 +97,32 @@
                         <option value="dressed">Dressed Chickens</option>
                     </select>
                 </div>
-
                 <div>
                     <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" name="quantity"><br>
+                    <input type="number" id="quantity" name="quantity">
                 </div>
-                
                 <div>
                     <label for="pickup">Mode of delivery</label>
                     <select name="pickup" id="pickup">
                         <option value="yes">Yes, I will pick it up from the house</option>
-                        <option value="no"> No, please deliver it to me</option>
+                        <option value="no">No, please deliver it to me</option>
                     </select>
                 </div>
-                
                 <div>
-                    <label for="delivery">Delivery address and Phone number</label><br>
-                    <textarea name="delivery" id="delivery" rows="8"></textarea> <br>
+                    <label for="delivery">Delivery address and Phone number</label>
+                    <textarea name="delivery" id="delivery" rows="5"></textarea>
                 </div>
-
                 <div class="order">
                     <button type="submit">Place Order</button>
                 </div>
             </form>
         </section>
     </main>
-    
+
     <footer class="footer">
-        &copy; Abigee Mega 2025. All Rights Reserved.
+        &copy; Abigee Mega 2026. All Rights Reserved.
     </footer>
+
     <script src="index.js"></script>
 </body>
 </html>
